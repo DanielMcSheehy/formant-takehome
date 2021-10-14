@@ -12,7 +12,7 @@ run_react_app:
 	@docker run -d -p 3000:3000 react
 
 build_server:
-	@docker build -t ${ImageName} ./webserver
+	@docker build -t ${ImageName} ./Webserver
 	
 run_server:
 	@docker run --rm -t -i -p ${ServerPort}:${ServerPort} ${ImageName}
